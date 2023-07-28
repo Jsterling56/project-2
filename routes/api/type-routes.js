@@ -7,32 +7,27 @@ const { Pokemon, Type } = require('../../models');
 router.get('/', async (req, res) => {
     try {
         const typesData = await Type.findAll();
-        console.log(typesData)
+        console.log(typesData);
         return res.json(typesData);
-    }
-    catch (err) {
-        console.log(err)
-        return res.json(err)
+    } catch (err) {
+        console.log(err);
+        return res.json(err);
     }
 });
 
 // get one type
 router.get('/:id', async (req, res) => {
-    try {
-        const typeData = await Type.findOne({
-            include: { model: Pokemon },
-            where: {
-                id: req.params.id,
-            }
-        }
 
-        ).then((typeData) => {
-            console.log(typeData);
-            return res.json(typeData)
-        });
-    }
-    catch (err) {
-        console.log(err)
-        return res.json(err)
-    }
+    Type.findOne({
+        include: { model: Pokemon },
+        where: {
+            id: req.params.id,
+        }
+    }).then((typeData) => {
+        console.log(typeData);
+        return res.json(typeData);
+    }).catch((err) => {
+        console.log(err);
+        return res.json(err);
+    })
 });
