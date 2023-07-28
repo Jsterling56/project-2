@@ -1,23 +1,23 @@
-const { Model, DataTypes } = require ('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection.js');
 
-class Pokemons extends Model {}
+class Pokemons extends Model { }
 
 Pokemons.init(
     {
-        id:{
+        id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true
         },
-        pokemon_name:{
+        pokemon_name: {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        type_id:{
+        type_id: {
             type: DataTypes.INTEGER,
-            references: { 
-                model: 'pokemon', 
+            references: {
+                model: 'pokemon',
                 key: 'id',
             },
         },
