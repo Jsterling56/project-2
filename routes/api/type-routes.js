@@ -6,33 +6,33 @@ const { Pokemon, Type } = require('../../models');
 // get all types
 router.get('/', async (req, res) => {
     try {
-      const typesData = await Type.findAll();
-      console.log(typesData)
-      return res.json(typesData);
+        const typesData = await Type.findAll();
+        console.log(typesData)
+        return res.json(typesData);
     }
     catch (err) {
-      console.log(err)
-      return res.json(err)
+        console.log(err)
+        return res.json(err)
     }
-  });
+});
 
-  // get one type
+// get one type
 router.get('/:id', async (req, res) => {
-  try {
-    const typeData = await Type.findOne({
-      include: { model: Pokemon },
-      where: {
-        id: req.params.id,
-      }
-    }
+    try {
+        const typeData = await Type.findOne({
+            include: { model: Pokemon },
+            where: {
+                id: req.params.id,
+            }
+        }
 
-    ).then((typeData) => {
-      console.log(typeData);
-      return res.json(typeData)
-    });
-  }
-  catch (err) {
-  console.log(err)
-  return res.json(err)
-}
+        ).then((typeData) => {
+            console.log(typeData);
+            return res.json(typeData)
+        });
+    }
+    catch (err) {
+        console.log(err)
+        return res.json(err)
+    }
 });

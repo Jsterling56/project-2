@@ -5,20 +5,20 @@ const { Pokemon, Type } = require('../../models');
 
 // get all pokemons
 router.get('/', async (req, res) => {
-    try {
-      const pokemonsData = await Pokemon.findAll({
-        include: [{ model: Type }]
-      });
-      console.log(pokemonsData)
-      return res.json(pokemonsData);
-    }
-    catch (err) {
-      console.log(err)
-      return res.json(err)
-    }
-  });
+  try {
+    const pokemonsData = await Pokemon.findAll({
+      include: [{ model: Type }]
+    });
+    console.log(pokemonsData)
+    return res.json(pokemonsData);
+  }
+  catch (err) {
+    console.log(err)
+    return res.json(err)
+  }
+});
 
-  // get one pokemon
+// get one pokemon
 router.get('/:id', async (req, res) => {
   try {
     const pokemonData = await Pokemon.findOne({
@@ -34,7 +34,7 @@ router.get('/:id', async (req, res) => {
     });
   }
   catch (err) {
-  console.log(err)
-  return res.json(err)
-}
+    console.log(err)
+    return res.json(err)
+  }
 });
