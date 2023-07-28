@@ -18,7 +18,7 @@ router.get('/', async (req, res) => {
 });
 
 // Get One Pokemons
-router.get('/:id', async (res, res) => {
+router.get('/:id', async (req, res) => {
 
     Pokemon.findOne({
         include: { model: Type },
