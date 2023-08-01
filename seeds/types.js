@@ -4,7 +4,7 @@ const typeData = [
   {
     'id': 0,
     'type_name': 'normal',
-    'img_url': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dfgdd92-72b221ea-6ce8-4345-8af6-6bb37adc71b2.png/v1/fill/w_1280,h_1280/colorless_type_symbol_tcg_by_jormxdos_dfgdd92-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZnZGQ5Mi03MmIyMjFlYS02Y2U4LTQzNDUtOGFmNi02YmIzN2FkYzcxYjIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xhEfgyrY7ZDNqVv7V0IvGDufJxDdk2ubxnK55Cc-qY0'  },
+    'img_url': 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e8ddc4da-23dd-4502-b65b-378c9cfe5efa/dfgdd92-72b221ea-6ce8-4345-8af6-6bb37adc71b2.png/v1/fill/w_1280,h_1280/colorless_type_symbol_tcg_by_jormxdos_dfgdd92-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcL2U4ZGRjNGRhLTIzZGQtNDUwMi1iNjViLTM3OGM5Y2ZlNWVmYVwvZGZnZGQ5Mi03MmIyMjFlYS02Y2U4LTQzNDUtOGFmNi02YmIzN2FkYzcxYjIucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.xhEfgyrY7ZDNqVv7V0IvGDufJxDdk2ubxnK55Cc-qY0' },
   {
     'id': 1,
     'type_name': 'fire',
