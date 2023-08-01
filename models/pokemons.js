@@ -14,16 +14,8 @@ Pokemons.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    primary_type: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'pokemonType',
-        key: 'id',
-      },
-    },
-    secondary_type: {
-      type: DataTypes.INTEGER,
+    pokemon_type: {
+      type: DataTypes.STRING,
       allowNull: true,
       references: {
         model: 'pokemonType',
@@ -31,7 +23,7 @@ Pokemons.init(
       },
     },
     strong_type: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
       references: {
         model: 'pokemonType',
@@ -39,7 +31,7 @@ Pokemons.init(
       },
     },
     weak_type: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
       references: {
         model: 'pokemonType',
