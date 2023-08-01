@@ -14,14 +14,44 @@ Pokemons.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    type_id: {
+    primary_type: {
       type: DataTypes.INTEGER,
+      allowNull: true,
       references: {
-        model: 'pokemon',
+        model: 'pokemonType',
         key: 'id',
       },
     },
+    secondary_type: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'pokemonType',
+        key: 'id',
+      },
+    },
+    strong_type: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'pokemonType',
+        key: 'id',
+      },
+    },
+    weak_type: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+      references: {
+        model: 'pokemonType',
+        key: 'id',
+      },
+    },
+    img_url: {
+      type: DataTypes.STRING,
+      allowNull: true
+    }
   },
+
   {
     sequelize,
     timestamps: false,

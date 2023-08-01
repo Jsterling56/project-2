@@ -1,23 +1,30 @@
-[
+const { pokemon } = require('../models')
+
+const pokemonData = [
     {
-        "id": "0252",
+        "id": "0252", 
+        "primary_type": "4",
         "pokemon_name": "Treecko"
-        
     },
     {
         "id": "0253",
+        "primary_type": "4",
         "pokemon_name": "Grovyle"
     },
     {
         "id": "0254",
+        "primary_type": "4",
         "pokemon_name": "Sceptile"
     },
     {
         "id": "0255",
+        "primary_type": "1",
         "pokemon_name": "Torchic"
     },
     {
         "id": "0256",
+        "primary_type": "1",
+        "secondary_type": "6",
         "pokemon_name": "Combusken"
     },
     {
@@ -429,9 +436,114 @@
         "pokemon_name": "Chimecho"
     },
     {
-        "id": "0352",
-        "pokemon_name": "Kecleon"
+        "id": "0359",
+        "pokemon_name": "Absol"
+    },
+    {
+        "id": "0360",
+        "pokemon_name": "Wynaut"
+    },
+    {
+        "id": "0361",
+        "pokemon_name": "Snorunt"
+    },
+    {
+        "id": "0362",
+        "pokemon_name": "Glalie"
+    },
+    {
+        "id": "0363",
+        "pokemon_name": "Spheal"
+    },
+    {
+        "id": "0364",
+        "pokemon_name": "Sealeo"
+    },
+    {
+        "id": "0365",
+        "pokemon_name": "Walrein"
+    },
+    {
+        "id": "0366",
+        "pokemon_name": "Clamperl"
+    },
+    {
+        "id": "0367",
+        "pokemon_name": "Huntail"
+    },
+    {
+        "id": "0368",
+        "pokemon_name": "Gorebyss"
+    },
+    {
+        "id": "0369",
+        "pokemon_name": "Relicanth"
+    },
+    {
+        "id": "0370",
+        "pokemon_name": "Luvdisc"
+    },
+    {
+        "id": "0371",
+        "pokemon_name": "Bagon"
+    },
+    {
+        "id": "0372",
+        "pokemon_name": "Shelgon"
+    },
+    {
+        "id": "0373",
+        "pokemon_name": "Salamence"
+    },
+    {
+        "id": "0374",
+        "pokemon_name": "Beldum"
+    },
+    {
+        "id": "0375",
+        "pokemon_name": "Metang"
+    },
+    {
+        "id": "0377",
+        "pokemon_name": "Regirock"
+    },
+    {
+        "id": "0378",
+        "pokemon_name": "Regice"
+    },
+    {
+        "id": "0379",
+        "pokemon_name": "Registeel"
+    },
+    {
+        "id": "0380",
+        "pokemon_name": "Latias"
+    },
+    {
+        "id": "0381",
+        "pokemon_name": "Latios"
+    },
+    {
+        "id": "0382",
+        "pokemon_name": "Kyogre"
+    },
+    {
+        "id": "0383",
+        "pokemon_name": "Groudon"
+    },
+    {
+        "id": "0384",
+        "pokemon_name": "Rayquaza"
+    },
+    {
+        "id": "0385",
+        "pokemon_name": "Jirachi"
+    },
+    {
+        "id": "0386",
+        "pokemon_name": "Deoxys"
     }
+];
 
-
-]
+const seedPokemonData = () => pokemon.bulkCreate(pokemonData);
+module.exports = seedPokemonData;
