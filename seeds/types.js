@@ -68,6 +68,10 @@ const typeData = [
   {
     'id': 16,
     'type_name': 'steel'
+  },
+  {
+    'id': 17,
+    'type_name': 'fairy'
   }
 ];
 
