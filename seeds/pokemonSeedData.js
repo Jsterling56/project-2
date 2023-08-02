@@ -211,7 +211,7 @@ const pokemonData = [
     'id': '0278',
     'pokemon_name': 'Wingull',
     'pokemon_type':  '2,9',
-    'strong_type':  '1,4,,6,8,11,12',
+    'strong_type':  '1,4,6,8,11,12',
     'weak_type':  '3,4,5,12',
     'img_url': 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/278.png'
   },
@@ -219,7 +219,7 @@ const pokemonData = [
     'id': '0279',
     'pokemon_name': 'Pelipper',
     'pokemon_type':  '2,9',
-    'strong_type':  '1,4,,6,8,11,12',
+    'strong_type':  '1,4,6,8,11,12',
     'weak_type':  '3,4,5,12',
     'img_url': 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/279.png'
   },
@@ -690,7 +690,7 @@ const pokemonData = [
     'id': '0339',
     'pokemon_name': 'Barboach',
     'pokemon_type':  '2,8',
-    'strong_type':  '1,3,,7,8,12,16',
+    'strong_type':  '1,3,7,8,12,16',
     'weak_type':  '2,3,4,5',
     'img_url': 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/339.png'
   },
@@ -698,7 +698,7 @@ const pokemonData = [
     'id': '0340',
     'pokemon_name': 'Whiscash',
     'pokemon_type':  '2,8',
-    'strong_type':  '1,3,,7,8,12,16',
+    'strong_type':  '1,3,7,8,12,16',
     'weak_type':  '2,3,4,5',
     'img_url': 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/340.png'
   },

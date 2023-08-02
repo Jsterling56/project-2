@@ -47,7 +47,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 app.get('/', (req, res) => {
-  res.json({ message: 'hello world!' });
+  //Serves the body of the page aka "main.handlebars" to the container //aka "index.handlebars"
+  res.render('search-by-type', { layout: 'main' });
 });
 
 sequelize.sync({ force: false }).then(() => {
