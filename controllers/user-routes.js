@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Pokemon, Type } = require('../../models');
+const { Pokemon, Type } = require('../models');
 
 
 // Get All Pokemons
