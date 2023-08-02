@@ -1,13 +1,11 @@
 const pokemonType = require('./pokemonTypes');
 const pokemon = require('./pokemons');
-
-
-// pokemon.hasMany(pokemonType, {
-//   foreignKey: 'pokemon_id',
-//   onDelete: 'CASCADE',
-// });
+const Trainer = require('./trainer');
 
 
 
 
-module.exports = { pokemon, pokemonType };
+
+
+
+module.exports = { pokemon, pokemonType, Trainer };
