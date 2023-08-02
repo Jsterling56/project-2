@@ -16,7 +16,7 @@ pokemonTypes.init(
       allowNull: false,
     },
     img_url: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true
     }
 

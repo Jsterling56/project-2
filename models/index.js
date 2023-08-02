@@ -7,9 +7,7 @@ const pokemon = require('./pokemons');
 //   onDelete: 'CASCADE',
 // });
 
-pokemonType.belongsTo(pokemon, {
-  foreignKey: 'pokemon_id',
-});
+
 
 
 module.exports = { pokemon, pokemonType };

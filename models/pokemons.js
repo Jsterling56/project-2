@@ -17,29 +17,29 @@ Pokemons.init(
     pokemon_type: {
       type: DataTypes.STRING,
       allowNull: true,
-      references: {
-        model: 'pokemonType',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'pokemonType',
+      //   key: 'id',
+      // },
     },
     strong_type: {
       type: DataTypes.STRING,
       allowNull: true,
-      references: {
-        model: 'pokemonType',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'pokemonType',
+      //   key: 'id',
+      // },
     },
     weak_type: {
       type: DataTypes.STRING,
       allowNull: true,
-      references: {
-        model: 'pokemonType',
-        key: 'id',
-      },
+      // references: {
+      //   model: 'pokemonType',
+      //   key: 'id',
+      // },
     },
     img_url: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: true
     }
   },
