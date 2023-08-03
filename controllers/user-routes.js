@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { Pokemon, Type } = require('../models');
+const { pokemon, pokemonType } = require('../models');
 
 
 // Get All Pokemons
 router.get('/', async (req, res) => {
   try {
-    const pokemonData = await Pokemon.findAll({
+    const pokemonData = await pokemon.findAll({
       include: [{ model: Type }]
     });
     console.log(pokemonData);
@@ -19,8 +19,8 @@ router.get('/', async (req, res) => {
 // Get One Pokemons
 router.get('/:id', async (req, res) => {
 
-  Pokemon.findOne({
-    include: { model: Type },
+  pokemon.findOne({
+    include: { model: pokemonType },
     where: {
       id: req.params.id,
     }
