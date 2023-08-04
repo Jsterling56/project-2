@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Set a background color for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: antiquewhite;
+}
+/* Style the header */
+header {
+  background-color: #ffcb05;
+  color: #2a75bb;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* Style the navigation bar */
+nav {
+  background-color: #2a75bb;
+  color: #ffcb05;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a, #logout {
+  color:#ffcb05;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+nav a:hover, #logout:hover {
+  background-color: #555;
+}
+/* Style the main content */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem;
+}
+aside {
+  flex-basis: 20%;
+}
+.pokedex {
+  flex-basis: 75%;
+}
+/* Style the gallery images */
+.pokedex img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+/* Add some spacing to the main content */
+main {
+  margin-top: 1rem;
+}
+/* Center the logout button */
+#logout {
+  display: block;
+  margin: 0 auto;
+}
+/* Add some padding to the footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #333;
+  color: #fff;
+}
+/* Add some styling to links */
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
