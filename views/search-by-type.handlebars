@@ -32,24 +32,36 @@
   <img src="{{this.img_url}}" style="width: 200px; height: 200px;" />
   <section>
     <h4>Pokemon Type</h4>
+    <div class="container">
     {{#each this.pokemonType}}
+    <div class="container-type">
     {{this.type_name}}
     <img src="{{this.img_url}}" style="width: 100px; height: 100px;" />
+    </div>
     {{/each}}
+    </div>
   </section>
   <section>
     <h4>Strong Against:</h4>
+    <div class="container">
     {{#each this.strongType}}
+    <div class="container-type">
     {{this.type_name}}
     <img src="{{this.img_url}}" style="width: 100px; height: 100px;" />
+    </div>
     {{/each}}
+    </div>
   </section>
   <section>
     <h4>Weak Against:</h4>
+    <div class="container">
     {{#each this.weakType}}
+    <div class="container-type">
     {{this.type_name}}
     <img src="{{this.img_url}}" style="width: 100px; height: 100px;" />
+    </div>
     {{/each}}
+    </div>
   </section>
   {{/each}}
 

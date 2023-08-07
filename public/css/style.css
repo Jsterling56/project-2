@@ -75,3 +75,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-type{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: center;
+  flex-direction: column-reverse;
+}
