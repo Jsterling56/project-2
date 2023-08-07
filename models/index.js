@@ -8,4 +8,4 @@ const pokemon = require('./pokemons');
 
 
 
-module.exports = { pokemon, pokemonType, Trainer };
+module.exports = { pokemon, pokemonType };
