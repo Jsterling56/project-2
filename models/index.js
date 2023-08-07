@@ -1,6 +1,6 @@
 const pokemonType = require('./pokemonTypes');
 const pokemon = require('./pokemons');
-const Trainer = require('./trainer');
+
 
 
 
