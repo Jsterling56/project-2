@@ -25,9 +25,8 @@ router.get('/:id', async (req, res) => {
       }
     });
     const pokemonByType = typeData.get({ plain: true });
-    const allPokemonType = (await pokemonType.findAll())
-      .map(t => t.get({ plain: true }));
-      const pokemonTypeDict = allPokemonType 
+    const pokemonTypeDict = (await pokemonType.findAll())
+      .map(t => t.get({ plain: true }))
       .reduce((ac, c) => {
         ac[c.id] = c;
         return ac;
@@ -44,9 +43,8 @@ router.get('/:id', async (req, res) => {
           weakType: p.weak_type.split(',').map(t => pokemonTypeDict[t]),
         };
       });
-    res.render('search-by-type', { pokemons, pokemonByType, allPokemonType });
-    console.table(pokemonByType);
-
+    res.render('search-by-type', { pokemons, pokemonByType });
+    console.table(pokemons);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

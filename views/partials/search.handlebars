@@ -1,0 +1,26 @@
+<!-- views/search.handlebars -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokemon Search</title>
+</head>
+<body>
+  <h1>Pokemon Search</h1>
+  <form method="get" action="/search">
+    <label for="searchTerm">Search for Pokemon:</label>
+    <input type="text" id="searchTerm" name="searchTerm" required>
+    <button type="submit">Search</button>
+  </form>
+
+  {{#if searchResults}}
+  <h2>Search Results:</h2>
+  <ul>
+    {{#each searchResults}}
+    <li>{{this.name}} - {{this.type}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+</body>
+</html>
+
